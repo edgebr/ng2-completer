@@ -10,4 +10,4 @@ export interface CompleterData extends Observable<CompleterItem[] | null> {
     cancel(): void;
     // Implement if you need to set an initial value
     convertToItem?(data: any): CompleterItem | null;
-};
+}
