@@ -128,7 +128,8 @@ export class CtrInput {
             event.preventDefault();
             this.completer.prevRow();
         } else if (keyCode === KEY_TAB) {
-            this.handleSelection();
+            console.log("pressionou o tab");
+            //this.handleSelection();
         } else if (keyCode === KEY_BK) {
             this.completer.open();
         } else if (keyCode === KEY_ES) {
