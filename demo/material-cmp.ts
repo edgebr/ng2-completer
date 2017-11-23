@@ -18,6 +18,7 @@ export class MaterialCmp {
 
     constructor(completerService: CompleterService) {
         this.dataService = completerService.local(this.countries, "name", "name").imageField("flag");
+        console.log(this.dataService);
     }
 
 }

@@ -1,3 +1,4 @@
+import commonjs from 'rollup-plugin-commonjs';
 import uglify from 'rollup-plugin-uglify';
 
 export default {
@@ -14,7 +15,14 @@ export default {
             return;
         },
     plugins: [
-        uglify()
+        uglify(),
+        commonjs({
+            namedExports: {
+                './bundles/index.js': ['CompleterData', 'CompleterItem']
+            }
+
+        })
+
     ],
     globals: {
         '@angular/core': 'ng.core',

@@ -127,10 +127,7 @@ export class CtrInput {
         } else if (keyCode === KEY_UP) {
             event.preventDefault();
             this.completer.prevRow();
-        } else if (keyCode === KEY_TAB) {
-            console.log("pressionou o tab");
-            //this.handleSelection();
-        } else if (keyCode === KEY_BK) {
+        }  else if (keyCode === KEY_BK) {
             this.completer.open();
         } else if (keyCode === KEY_ES) {
             // This is very specific to IE10/11 #272
