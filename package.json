@@ -1,8 +1,8 @@
 {
   "name": "@lucasolivamorim/ng2-completer",
-  "version": "1.6.3",
+  "version": "1.6.8",
   "description": "ng2 autocomplete/typeahead component",
-  "main": "bundles/ng2-completer.js",
+  "main": "bundles/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "cross-env ./node_modules/.bin/del  .tmp bundles dist \"src/**/*.+(js|d.ts|js.map)\" \"demo/**/*.+(js|js.map)\" && mkdir -p dist",
